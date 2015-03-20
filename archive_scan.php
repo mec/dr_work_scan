@@ -102,6 +102,7 @@
 		if ( $matchingFilesPercentage >= 90 AND $totalJobSize > 2000000000 ) {
 			// output
 			echo "Checking : " . basename($jobPath) . "\n";
+			echo "Path : " . $jobPath . "\n";
 			echo "Number of files in job : " . $totalFiles . "\n";
 			echo "Size of job : " . human_filesize( $totalJobSize ) . "\n";
 			echo "Percentage of matching files : " . $matchingFilesPercentage . "%\n\n";
